@@ -1,0 +1,273 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    display: block;
+    align-self: center;
+    justify-content: center;
+    background-color: #f6e2bc3b;
+}
+
+h2{
+    color: rgb(142, 164, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/*  */
+/* ------------------navbar------------------ */
+.logo{
+    display: flex;
+    justify-content: center;
+    margin:30px auto;
+}
+
+.navbar-brand > img{
+    width:160px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    color: #1F1534;
+    text-shadow: 1px 1px 5px rgb(142, 164, 233);
+    font-size:18px;
+    float: center;
+}
+.nav-item:hover{
+    font-weight: bolder;
+    font-size: 20px;
+    color:#4089ED;
+    transition: 1s;
+}
+
+.navbar-brand:before{
+    content: '';
+    position: absolute;
+    top: 60px;
+    width: 190px;
+    border-top: 1px solid  rgb(142, 164, 233);
+    transform: translateX(-150%);
+}
+.navbar-brand:after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    width: 190px;
+    border-top: 1px solid  rgb(142, 164, 233);
+    transform: translateX(150%);
+}
+/* ------------------------ hero section ----------------------*/
+.hero{
+    /* margin-top:160px; */
+    width:100em;
+    height:400px;
+    background-image: url(images/hero-bg.webp);
+    background-size: cover;
+    background-position: center;
+    opacity:80%;
+    border-radius:25px;
+}
+.hero>img{
+    opacity:80%;
+}
+
+
+/* ------------video--------------------- */
+.content {
+    position: sticky;
+    bottom: 0;
+    margin-top:100px;
+    /* width: 100%; */
+    /* padding: 100px; */
+    margin-left:100px
+  }
+
+#myvideo{
+    height: 500px !important;
+}
+
+/* -------------------------------cards ------------------------------- */
+/* .header > h2{
+    
+    margin-bottom:30px;
+    animation: pulse 2s linear 0s infinite normal forwards;
+}
+@keyframes pulse {
+    0%{transform: (scale(1));}
+    50%{transform: (scale(1.2));}
+    100%{transform: (scale(1));}
+} */
+
+/* .card{
+    
+}
+.card > img{
+    opacity:80%;
+} */
+
+.btn {
+    background-color: #a9d09e;
+    color: #fff;
+    margin-top: 10px;
+    transition: 1s;
+  }
+  .btn:hover {
+    background-color: rgb(255, 219, 196);
+    border-radius: 10px;
+    border: #ffcba2 solid 1px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+
+  .card-title {
+    color: rgb(142, 164, 233);
+    font-size: large;
+    font-weight: bolder;
+  }
+ 
+/* div {
+    background-image: url("mdn_logo_only_color.png");
+  } */
+
+
+ 
+  /* --------------------------page------------------------------ */
+  iframe {
+    width: 220px;
+    height: 360px;
+}
+
+.contact_detail {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_detail_1 {
+    color: white;
+    background-color: #0a4a6e;
+    max-width: 700px;
+    justify-content: left;
+}
+
+.contact_detail_2 {
+    margin: 0;
+    text-align: center;
+}
+
+.social_icon {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.social_icon a {
+    color: #0a4a6e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------Contact Page ----------------------- */
+.contactPAge{
+    width:60%;
+    height: 40%;
+    position: relative;
+    /* background-image: url(images/11\ \(2\).avif);
+    background-size: cover;
+    background-position: center; */
+    
+}
+.contactPage img{
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    object-position: bottom;
+    top:50%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    width:50vw; 
+    height:90vh;
+    border-radius: 25px;
+}
+.box1{
+    position: absolute;
+    z-index: 2;
+    width:700px;
+    height: 800px;
+    top:50%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    font-weight:bolder;
+    opacity:20%;
+    border-radius: 25px;
+    background-color: #fff;
+    border:#fff solid 2px;
+    backdrop-filter: blur(20px);
+    /* color: #fff */
+    
+}
+.box1 img {
+    width:400px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    margin-left:130px;
+
+}
+
+.contctInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 500px;
+    color: black;
+    
+    
+}
+
+
+
+/* ---------------Page Content------------------- */
+.pageBanner{
+    position: absolute;
+    z-index: 1;
+}
+
+.pageContent{
+    position: absolute;
+    z-index: 2;
+    right:0;
+    margin-top:50px;
+}
